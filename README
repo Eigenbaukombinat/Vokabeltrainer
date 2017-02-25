@@ -1,0 +1,6 @@
+Installation
+============
+
+virtualenv --python=python3 .
+bin/pip install flask
+FLASK_APP=server.py bin/flask run

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Vokabeltrainer</title>
+    <style type="text/css">
+
+    h1 {color:blue;}
+    .falsch {color:red;}
+    .richtig {color:lightgreen;}
+
+</style>
+    
+</head>
+
+<body>
+    <a href="/">Startseite</a>
+    <h2 class="{{result}}">{{msg}}</h2>
+    
+<h1>{{frage}}</h1>
+
+
+<form>
+<input type="text" name="antwort"/>
+<input type="hidden" name="antwort_id" value="{{id}}"/>
+
+
+{{status}}
+
+</form>
+
+</body>
+
+</html>

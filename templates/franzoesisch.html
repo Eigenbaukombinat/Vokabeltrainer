@@ -1,0 +1,36 @@
+<html>
+	
+<head>
+	<title>Französisch</title>
+	
+</head>
+
+<body>
+	<a href="/">Menü</a>
+	<a href="/">Startseite</a>
+	<form action="/zweiteFremdsprache/neu">
+	Französisch:
+	<input type="text" id="fran" name="fran">
+	Deutsch:
+	<input type="text" id="deut" name="deut">
+	<button type="submit">accept
+	</button>
+	</form>
+
+		<table>
+			<tr>
+			<th>Französisch</th>
+			<th>Deutsch</th>
+			</tr>
+			
+			{%for vokabel in vokabelliste%}
+			<tr>
+				<td>{{vokabel[0]}}</td>
+				<td>{{vokabel[1]}}</td>
+			</tr>
+			{%endfor%}
+		</table>
+	
+</body>
+
+</html>
